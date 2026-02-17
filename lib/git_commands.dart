@@ -1,7 +1,6 @@
-/*
-  Git commands that are used in the project.
-
-" * `git clone <repository>`: Clones a repository into a new directory.
+const gitCommands = '''/*
+  * Git commands that are used in the project.
+  * `git clone <repository>`: Clones a repository into a new directory.
   * `git add <file>`: Adds a file to the staging area.
   * `git commit -m "<message>"`: Commits the staged changes with a message.
   * `git push`: Pushes the committed changes to a remote repository.
@@ -43,13 +42,12 @@
   * `git log --stat --since="1 month ago"`: Shows the commit history with statistics for the last month.
   * `git log --patch --author="Jane Doe"`: Shows the commit history with changes for commits made by Jane Doe.
   * `git log --pretty=format:"%h - %an, %ar : %s" --since="1 year ago"`: Shows the commit history in a custom format for the last year.
-  *   `git log --follow --name-only <file>`: Shows the commit history with file names for a specific file, including renames.
+  * `git log --follow --name-only <file>`: Shows the commit history with file names for a specific file, including renames.
   * `git log --name-status --reverse`: Shows the commit history with file names and status in reverse order.
-  *   `git log --no-merges --all`: Shows the commit history without merge commits for all branches.
-  *   `git log --graph --oneline --all --since="1 month ago"`: Shows the commit history as a graph in a condensed format for all branches for the last month.
+  * `git log --no-merges --all`: Shows the commit history without merge commits for all branches.
+  * `git log --graph --oneline --all --since="1 month ago"`: Shows the commit history as a graph in a condensed format for all branches for the last month.
   * `git log --since="2 weeks ago" --until="1 week ago"`: Shows the commit history for the last two weeks until one week ago.
-  *   `git log --author="John Doe" --grep="bug fix"`: Shows the commit history for commits made by John Doe with "bug fix" in the message.
-  *   
+  * `git log --author="John Doe" --grep="bug fix"`: Shows the commit history for commits made by John Doe with "bug fix" in the message.  
   * git branch -d <branch>: Deletes a branch.
   * git branch -D <branch>: Force deletes a branch.
   * git branch -m <old_branch> <new_branch>: Renames a branch.
@@ -125,4 +123,37 @@
   * git branch --list 'docs/update-readme': Lists branches that match the pattern 'docs/update-readme'.
   * git branch --list 'refactor/code-cleanup': Lists branches that match the pattern 'refactor/code-cleanup'.
 
+  */''';
+
+
+//IMPORTANT: USEFUL GIT COMMANDS
+/** 
+ * INSTALL GIT: `sudo apt-get install git` (Linux), `brew install git` (Mac), or download from https://git-scm.com/downloads (Windows).
+ * CONFIGURE GIT: `git config --global user.name "Your Name"` and `git config --global user.email "
+ * 
+*/
+
+/**
+ * THE DAILY GIT ROUTINE:
+ * 1. `git pull`: Fetches and merges changes from the remote repository to ensure you have the latest code.
+ * 2. `git add <file>`: Stages the changes you have made to the files you want to commit.
+ * 3. `git commit -m "<message>"`: Commits the staged changes with a descriptive message about what you have done.    
+ * 4. `git push`: Pushes your committed changes to the remote repository so that others can see and collaborate on your work.
+ * 5. `git status`: Checks the status of your working directory and staging area to see what changes have been made and what is staged for commit.
+ * 6. `git log`: Reviews the commit history to understand the changes that have been made over time.
+ * 7. `git branch`: Manages branches to work on different features or fixes without affecting the main codebase.
+ * 8. `git checkout <branch>`: Switches to a different branch to work on a specific feature or fix.
+ * 9. `git merge <branch>`: Merges changes from one branch into another, typically used to integrate a feature branch back into the main branch.    
+ * 10. `git stash`: Temporarily saves changes that are not ready to be committed, allowing you to switch branches or pull changes without losing your work.
+ * 11. `git stash pop`: Applies the stashed changes back to your working directory and removes them from the stash list.
+ * 12. `git remote add <name> <url>`: Adds a new remote repository to collaborate with others.
+ * 13. `git remote -v`: Lists the remote repositories you have configured.
+ * 14. `git fetch`: Fetches changes from a remote repository without merging them, allowing you to review changes before integrating them into your codebase.
+ * 15. `git reset --hard <commit>`: Resets your current branch to a specific commit, discarding all changes made after that commit. Use with caution as this can lead to loss of work.
+ * 16. `git revert <commit>`: Creates a new commit that undoes the changes made in a specific commit, allowing you to undo changes without altering the commit history.
+ * 17. `git tag <tagname>`: Creates a new tag for the current commit, often used to mark release points in the project.
+ * 18. `git diff`: Shows the differences between your working directory and the staging area, helping you review changes before committing.
+ * 19. `git diff --staged`: Shows the differences between the staging area and the last commit, allowing you to review what will be included in the next commit.    
+ * 20. `git log --oneline`: Shows the commit history in a condensed format, making it easier to review recent commits.
+ * 21. `git log --graph`: Shows the commit history as a graph, helping you visualize the branching and merging history of the project.
  */
