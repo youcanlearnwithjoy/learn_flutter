@@ -116,3 +116,22 @@
  * Successful authentication will result in a message like "Hi username! You've successfully authenticated, but GitHub does not provide shell access."
  * If you encounter issues, make sure your SSH key is added to the ssh-agent and that the public key is correctly added to your Git hosting service. You can also check the permissions of your SSH key files to ensure they are secure (private key should have permissions 600)."
  */ 
+
+/**
+ * git pull (downloads and merges changes from the remote repository into your current branch)
+ * git pull origin main (pulls changes from the main branch of the remote repository)
+ * git pull --rebase (pulls changes and rebases your commits on top of the latest commits from the remote branch, instead of merging)
+ * git pull --rebase origin main (pulls changes from the main branch and rebases your commits on top of them)
+ * git pull --no-rebase (pulls changes and merges them, even if you have configured pull.rebase to true)
+ * git pull --no-ff (pulls changes and creates a merge commit even if the merge could be fast-forwarded)
+ * git pull --ff-only (pulls changes and only allows fast-forward merges, aborting if a merge commit would be necessary)
+ * git pull --squash (pulls changes and squashes them into a single commit, allowing you to edit the commit message before committing)
+ * git pull --no-commit (pulls changes and merges them without creating a commit, allowing you to review the changes before committing)
+ * git pull --no-edit (pulls changes and merges them without opening the commit message editor, using the default merge commit message)
+ * git pull --verbose (pulls changes and provides detailed output of the pull process)
+ * git pull --quiet (pulls changes with minimal output, only showing errors)
+ * git pull --depth=1 (pulls only the latest commit from the remote repository, reducing the amount of data transferred)
+ * git pull --tags (pulls all tags from the remote repository along with the commits)
+ * git pull --all (pulls changes from all configured remotes, not just the default remote)
+ * git pull --recurse-submodules (pulls changes for the main repository and also updates any submodules to match the commits specified in the main repository)
+ */

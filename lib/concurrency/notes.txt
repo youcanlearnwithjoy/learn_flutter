@@ -1,0 +1,10 @@
+Dart Concurrency 
+
+Concurrency means handling multiple tasks at the same time or in an overlapping manner.
+Dart handles this through Async/Await, Futures, Streams and Isolates.
+
+How Dart Executes Code - Event Loop
+
+Before anything, you need to understand this. Dart is single threaded - it has only one threadedcalled the main isolate.
+But it handles Concurrency through an Event Loop.
+

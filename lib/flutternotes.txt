@@ -1,0 +1,16 @@
+Flutter: This is the name of the brand of framework. It is google's goolkit
+for building beautiful apps for mobile, web, and desktop using a single set of code.
+
+Flutter SDK (Software Development Kit): Flutter & the SDK
+
+Think of this as a toolbox, it contains, The engine (the heavy machinery that draw pixels)
+The framework: A library of Widgets you use to build.
+The tools: Commands to Run the app, Debug it, and compile
+
+Flutter creates UI by going through a Rendering Pipeline.
+
+The Frame:
+
+A frame is a single snapshot of your app. To look smooth (like video),
+Flutter tries to create 60 frames per second (one every 16ms). It it takes too
+long to draw a frame, the app lags or janks.

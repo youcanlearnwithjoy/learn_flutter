@@ -1,0 +1,33 @@
+Class & Object:
+
+Class is a blue print of an Object.
+Object is an instance of a class.
+
+
+Encapsulation:
+Encapsulation is the process of wrapping data and code together as a single unit.
+It is used to hide the internal details of an object from the outside world and 
+only expose a public interface.
+
+Encapsulation is achieved by using access modifiers like private, protected and public.
+Encapsulation is also known as data hiding.
+
+Encapsulation = Hiding internal state + exposing controlled access.
+
+Inheritance:Inheritance is the process of creating a new class from an existing class.
+The new class is called a subclass or child class and the existing class is called a superclass or parent class.
+The subclass inherits the properties and behaviors of the superclass and can also have its own properties and behaviors.
+Inheritance is achieved by using the keyword 'extends' in Java and 'inherit' in Python.
+Inheritance is also known as is-a relationship.
+
+Polymorphism:   Polymorphism is the ability of an object to take on many forms.
+Polymorphism is achieved by using method overloading and method overriding.
+Method overloading is the ability to define multiple methods with the same name but different parameters.
+Method overriding is the ability to define a method in a subclass that has the same name and parameters as a method in the superclass.
+Polymorphism is also known as many forms.
+
+Abstraction: Abstraction is the process of hiding the implementation details and showing only the functionality to the user.
+Abstraction is achieved by using abstract classes and interfaces.
+An abstract class is a class that cannot be instantiated and is used to provide a base for subclasses.
+An interface is a collection of abstract methods that can be implemented by any class.
+Abstraction is also known as hiding complexity.
